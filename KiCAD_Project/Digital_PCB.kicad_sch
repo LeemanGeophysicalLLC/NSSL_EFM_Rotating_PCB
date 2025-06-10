@@ -4478,16 +4478,6 @@
 	)
 	(wire
 		(pts
-			(xy 171.45 109.22) (xy 171.45 111.76)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "13e4abc8-00e4-4080-9d64-7e0e892a2ac3")
-	)
-	(wire
-		(pts
 			(xy 231.14 152.4) (xy 231.14 140.97)
 		)
 		(stroke
@@ -4855,16 +4845,6 @@
 			(type default)
 		)
 		(uuid "5b3d8a33-3912-4989-9200-f94f416b414c")
-	)
-	(wire
-		(pts
-			(xy 171.45 111.76) (xy 152.4 111.76)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "624c18f9-bdf5-40ef-ac82-7d8d89791259")
 	)
 	(wire
 		(pts
@@ -5516,16 +5496,6 @@
 		)
 		(uuid "faa16eab-985b-44a2-935d-e5bcb428d61f")
 	)
-	(wire
-		(pts
-			(xy 152.4 114.3) (xy 171.45 114.3)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fd2a24ba-418c-4263-a999-f1f5345949bd")
-	)
 	(image
 		(at 228.6 179.705)
 		(uuid "ccff40a1-9b3e-42d4-ba1d-c336c4e5e94f")
@@ -5741,7 +5711,7 @@
 	)
 	(global_label "XBee_RX"
 		(shape passive)
-		(at 171.45 114.3 0)
+		(at 152.4 114.3 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5751,7 +5721,7 @@
 		)
 		(uuid "0df5d686-bffc-46c3-9264-a0a952adba4b")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 181.9669 114.2206 0)
+			(at 162.9169 114.2206 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6376,7 +6346,7 @@
 	)
 	(global_label "XBee_TX"
 		(shape passive)
-		(at 171.45 109.22 0)
+		(at 152.4 111.76 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -6386,7 +6356,7 @@
 		)
 		(uuid "a8466370-a032-44db-bcd8-28139548fcc0")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 181.6645 109.1406 0)
+			(at 162.6145 111.6806 0)
 			(effects
 				(font
 					(size 1.27 1.27)
