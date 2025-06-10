@@ -1,7 +1,7 @@
 (kicad_sch
-	(version 20231120)
+	(version 20250114)
 	(generator "eeschema")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(uuid "8b936145-a0e6-4612-a92f-dad80500ab03")
 	(paper "USLetter")
 	(title_block
@@ -15,7 +15,9 @@
 	)
 	(lib_symbols
 		(symbol "capacitors_0805:1-0000075"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 0.254)
 			)
@@ -106,7 +108,7 @@
 			(symbol "1-0000075_0_1"
 				(polyline
 					(pts
-						(xy -2.032 -0.762) (xy 2.032 -0.762)
+						(xy -2.032 0.762) (xy 2.032 0.762)
 					)
 					(stroke
 						(width 0.508)
@@ -118,7 +120,7 @@
 				)
 				(polyline
 					(pts
-						(xy -2.032 0.762) (xy 2.032 0.762)
+						(xy -2.032 -0.762) (xy 2.032 -0.762)
 					)
 					(stroke
 						(width 0.508)
@@ -167,9 +169,12 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "capacitors_1206:1-0000136"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 0.254)
 			)
@@ -260,7 +265,7 @@
 			(symbol "1-0000136_0_1"
 				(polyline
 					(pts
-						(xy -2.032 -0.762) (xy 2.032 -0.762)
+						(xy -2.032 0.762) (xy 2.032 0.762)
 					)
 					(stroke
 						(width 0.508)
@@ -272,7 +277,7 @@
 				)
 				(polyline
 					(pts
-						(xy -2.032 0.762) (xy 2.032 0.762)
+						(xy -2.032 -0.762) (xy 2.032 -0.762)
 					)
 					(stroke
 						(width 0.508)
@@ -321,6 +326,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "dc_dc_converters:1-0000465"
 			(exclude_from_sim no)
@@ -420,43 +426,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 -5.08) (xy 0 -6.35)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 -2.54) (xy 0 -3.81)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 -1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.54) (xy 0 1.27)
+						(xy 0 7.62) (xy 0 6.35)
 					)
 					(stroke
 						(width 0)
@@ -480,7 +450,43 @@
 				)
 				(polyline
 					(pts
-						(xy 0 7.62) (xy 0 6.35)
+						(xy 0 2.54) (xy 0 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -2.54) (xy 0 -3.81)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -5.08) (xy 0 -6.35)
 					)
 					(stroke
 						(width 0)
@@ -492,17 +498,17 @@
 				)
 			)
 			(symbol "1-0000465_1_1"
-				(pin power_in line
-					(at -12.7 -5.08 0)
+				(pin input line
+					(at -12.7 5.08 0)
 					(length 2.54)
-					(name "GNDin"
+					(name "ON/~{OFF}"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "1"
+					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -528,17 +534,17 @@
 						)
 					)
 				)
-				(pin input line
-					(at -12.7 5.08 0)
+				(pin power_in line
+					(at -12.7 -5.08 0)
 					(length 2.54)
-					(name "ON/~{OFF}"
+					(name "GNDin"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "3"
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -548,7 +554,8 @@
 				)
 				(pin no_connect line
 					(at -2.54 7.62 270)
-					(length 2.54) hide
+					(length 2.54)
+					(hide yes)
 					(name "NC"
 						(effects
 							(font
@@ -619,6 +626,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "dc_dc_converters:1-0000727"
 			(pin_names
@@ -779,9 +787,12 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "fuses:1-0000269"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 0)
 			)
@@ -869,6 +880,18 @@
 				)
 			)
 			(symbol "1-0000269_0_1"
+				(polyline
+					(pts
+						(xy -1.524 2.54) (xy -1.524 1.524) (xy 1.524 -1.524) (xy 1.524 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
 				(rectangle
 					(start -0.762 2.54)
 					(end 0.762 -2.54)
@@ -883,18 +906,6 @@
 				(polyline
 					(pts
 						(xy 0 2.54) (xy 0 -2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.524 2.54) (xy -1.524 1.524) (xy 1.524 -1.524) (xy 1.524 -2.54)
 					)
 					(stroke
 						(width 0)
@@ -943,9 +954,12 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "inductors:1-0000931"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 0)
 			)
@@ -1033,20 +1047,8 @@
 			)
 			(symbol "1-0000931_0_1"
 				(arc
-					(start -1.27 0)
+					(start -2.54 0)
 					(mid -1.905 0.6323)
-					(end -2.54 0)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 0)
-					(mid -0.635 0.6323)
 					(end -1.27 0)
 					(stroke
 						(width 0)
@@ -1057,8 +1059,8 @@
 					)
 				)
 				(arc
-					(start 1.27 0)
-					(mid 0.635 0.6323)
+					(start -1.27 0)
+					(mid -0.635 0.6323)
 					(end 0 0)
 					(stroke
 						(width 0)
@@ -1069,9 +1071,21 @@
 					)
 				)
 				(arc
-					(start 2.54 0)
-					(mid 1.905 0.6323)
+					(start 0 0)
+					(mid 0.635 0.6323)
 					(end 1.27 0)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 1.27 0)
+					(mid 1.905 0.6323)
+					(end 2.54 0)
 					(stroke
 						(width 0)
 						(type default)
@@ -1119,10 +1133,13 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "np_connectors:NP_Conn_01x02_Relief"
 			(pin_names
-				(offset 1.016) hide)
+				(offset 1.016)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1207,14 +1224,14 @@
 			)
 			(symbol "NP_Conn_01x02_Relief_1_1"
 				(rectangle
-					(start -1.27 -2.413)
-					(end 0 -2.667)
+					(start -1.27 1.27)
+					(end 1.27 -3.81)
 					(stroke
-						(width 0.1524)
+						(width 0.254)
 						(type default)
 					)
 					(fill
-						(type none)
+						(type background)
 					)
 				)
 				(rectangle
@@ -1229,14 +1246,14 @@
 					)
 				)
 				(rectangle
-					(start -1.27 1.27)
-					(end 1.27 -3.81)
+					(start -1.27 -2.413)
+					(end 0 -2.667)
 					(stroke
-						(width 0.254)
+						(width 0.1524)
 						(type default)
 					)
 					(fill
-						(type background)
+						(type none)
 					)
 				)
 				(pin passive line
@@ -1276,12 +1293,17 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:+3V3"
 			(power)
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1353,7 +1375,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 0) (xy 0 2.54)
+						(xy 0 2.54) (xy 0.762 1.27)
 					)
 					(stroke
 						(width 0)
@@ -1365,7 +1387,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
+						(xy 0 0) (xy 0 2.54)
 					)
 					(stroke
 						(width 0)
@@ -1396,12 +1418,17 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:+5V"
 			(power)
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1473,7 +1500,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 0) (xy 0 2.54)
+						(xy 0 2.54) (xy 0.762 1.27)
 					)
 					(stroke
 						(width 0)
@@ -1485,7 +1512,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
+						(xy 0 0) (xy 0 2.54)
 					)
 					(stroke
 						(width 0)
@@ -1516,12 +1543,17 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:+BATT"
 			(power)
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1593,7 +1625,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 0) (xy 0 2.54)
+						(xy 0 2.54) (xy 0.762 1.27)
 					)
 					(stroke
 						(width 0)
@@ -1605,7 +1637,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
+						(xy 0 0) (xy 0 2.54)
 					)
 					(stroke
 						(width 0)
@@ -1636,12 +1668,17 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:-5V"
 			(power)
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1732,12 +1769,17 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:GND"
 			(power)
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1828,12 +1870,17 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:PWR_FLAG"
 			(power)
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1924,9 +1971,12 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "resistors_0603:1-0000006"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 0)
 			)
@@ -2063,9 +2113,12 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "resistors_0603:1-0000010"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 0)
 			)
@@ -2202,9 +2255,12 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "resistors_0603:1-0000068"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 0)
 			)
@@ -2341,6 +2397,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "switches:1-0000576"
 			(pin_names
@@ -2496,24 +2553,6 @@
 						)
 					)
 				)
-				(pin passive line
-					(at -3.81 -11.43 90)
-					(length 2.54)
-					(name "CL"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
 				(pin bidirectional line
 					(at -13.97 -3.81 0)
 					(length 2.54)
@@ -2532,35 +2571,17 @@
 						)
 					)
 				)
-				(pin power_in line
-					(at -1.27 -11.43 90)
+				(pin passive line
+					(at -3.81 -11.43 90)
 					(length 2.54)
-					(name "GND"
+					(name "CL"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_out line
-					(at 13.97 1.27 180)
-					(length 2.54)
-					(name "OUT"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "7"
+					(number "4"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2587,6 +2608,24 @@
 					)
 				)
 				(pin power_in line
+					(at -1.27 -11.43 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
 					(at 1.27 -11.43 90)
 					(length 2.54)
 					(name "PAD"
@@ -2604,8 +2643,49 @@
 						)
 					)
 				)
+				(pin power_out line
+					(at 13.97 1.27 180)
+					(length 2.54)
+					(name "OUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
 			)
+			(embedded_fonts no)
 		)
+	)
+	(text "Populate 0R0 and not debounce protection if desired."
+		(exclude_from_sim no)
+		(at 93.345 33.655 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "6ec8416d-b1c5-40ff-bf73-8027820c714a")
+	)
+	(text "Delays turn on for approx 1 sec after\npower is applied to help with any\nswitch bounce/activation issues."
+		(exclude_from_sim no)
+		(at 153.035 43.18 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "be14cf26-f253-4ba2-82c3-826e593d1044")
 	)
 	(junction
 		(at 123.825 43.815)
@@ -3083,30 +3163,26 @@
 			"8EE40WLtm/sKI5cVLAAAyI6gosUp2FsIfyAAAHglgmhxCvMWQq4AACAA0USLU4B0Qa4AACAYkUWL"
 			"k+laF+QKAAACk4RocfgOqvQNL0QGAgBALBISrQq3Gf9cET3hHgAAgBRFq0KdQywM0CoAAEiHpEWr"
 			"wlMS2zYCpOUFAABAIA/RErCspStTZQSHUAEAQMpkKVoyQuk2TeD0AwCAvPh/UbNVz/ggVM8AAAAA"
-			"SUVORK5CYII="
+			"SUVORK5CYIKMADgDgAAAAAAAAAAACAAAAAAAAAAQG6K39gEAAAEAAAAAAAAAAAAAAAAAAABYfn+M"
+			"ADkDgAAAAAAAAAAACAAAAAAAAACQHaK39gEAAAEAAAAAAAAAAAAAAAAAAAAlfniMADoDgAAAAAAA"
+			"AAAAAwAAAAAAAAAgwKm39gEAAAEAAAAAAAAAAAAAAAAAAAAmfgWMADsDgFArqbf2AQAAAwAAAAAA"
+			"AAAgAKW39gEAAAEAAAAAAAAAAAAAAAAAAAAjfgaMADwDgMAhqbf2AQAAAwAAAAAAAADgAKW39gEA"
+			"AAEAAAAAAAAAAAAAAAAAAAAsfgOMAD0DgAAAAAAAAAAAAwAAAAAAAAAwKqm39gEAAAEAAAAAAAAA"
+			"AAAAAAAAAAApfgyMAD4DgAAtqbf2AQAAAwAAAAAAAADAvKm39gEAAAEAAAAAAAAAAAAAAAAAAAAq"
+			"fgmMAD8DgIAiqbf2AQAAAwAAAAAAAACg+qS39gEAAAEAAAAAAAAAAAAAAAAAAAA3fgqMAEADgAAA"
+			"AAAAAAAABAAAAAAAAAABAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAwfheMAEEDgAAAAAAAAAAAAwAA"
+			"AAAAAAAwvam39gEAAAEAAAAAAAAAAAAAAAAAAAA9fhCMAEIDgAAAAAAAAAAAAwAAAAAAAAAwMKm3"
+			"9gEAAAEAAAAAAAAAAAAAAAAAAAA+fh2MAEMDgCA0qbf2AQAAAwAAAAAAAAAA/KS39gEAAAEAAAAA"
+			"AAAAAAAAAAAAAAA7fh6MAEQDgAA5qbf2AQAAAwAAAAAAAAAA+6S39gEAAAEAAAAAAAAAAAAAAAAA"
+			"AAAEfhuMAEUDgIA0qbf2AQAAAwAAAAAAAADA/KS39gEAAAEAAAAAAAAAAAAAAAAAAAABfiSMAEYD"
+			"gAAAAAAAAAAACAAAAAAAAACQGKK39gEAAAEAAAAAAAAAAAAAAAAAAAACfiGMAEcDgAAAAAAAAAAA"
+			"AwAAAAAAAADgAaW39gEAAAEAAAAAAAAAAAAAAAAAAAAPfiKMAEgDgEM6L1dJTkRPV1MvZm9udHNc"
+			"TklBR0VORy5UVEYAAAAAAAAAAAAAAAAIfi+MAEkDgAAAAAAAAAAABAAAAAAAAAABAAAAAAAAAAEA"
+			"AAAAAAAAAAAAAAAAAAAVfiiMAEoDgAAAAAAAAAAAAwAAAAAAAAAwxKm39gEAAAEAAAAAAAAAAAAA"
+			"AAAAAAAWfjWMAEsDgJAzqbf2AQAAAwAAAAAAAABAvam39gEAAAEAAAAAAAAAAAAAAAAAAAATfjaM"
+			"AEwDgCAuqbf2AQAAAwAAAAAAAABA/KS39gEAAAEAAAAAAAAAAAAAAAAAAAAcfjOMAE0DgAAAAAAA"
+			"AAAABAAAAA=="
 		)
-	)
-	(text "Populate 0R0 and not debounce protection if desired."
-		(exclude_from_sim no)
-		(at 93.345 33.655 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "6ec8416d-b1c5-40ff-bf73-8027820c714a")
-	)
-	(text "Delays turn on for approx 1 sec after\npower is applied to help with any\nswitch bounce/activation issues."
-		(exclude_from_sim no)
-		(at 153.035 43.18 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "be14cf26-f253-4ba2-82c3-826e593d1044")
 	)
 	(symbol
 		(lib_id "switches:1-0000576")
