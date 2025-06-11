@@ -31544,7 +31544,7 @@
 		(layer "Edge.Cuts")
 		(uuid "f583f279-adc9-4fbe-9035-602b4b79557d")
 	)
-	(gr_text "ISCP"
+	(gr_text "ICSP"
 		(at 178.054 96.901 270)
 		(layer "F.SilkS")
 		(uuid "3c0fb7c5-5464-45c3-b8ae-615a627cb93d")
