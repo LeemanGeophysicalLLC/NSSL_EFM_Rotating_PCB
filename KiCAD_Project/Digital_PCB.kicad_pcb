@@ -3083,7 +3083,7 @@
 				)
 			)
 		)
-		(property "Populated" "1"
+		(property "Populated" "0"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -5810,7 +5810,7 @@
 				)
 			)
 		)
-		(path "/e7b7dae7-adcd-4da4-9a5c-30c350ad288b/57a3594e-c41a-409f-93a1-fd33b8063a9b")
+		(path "/e7b7dae7-adcd-4da4-9a5c-30c350ad288b/9ad72cd5-9b76-41f6-82a7-3f0c20ae7d16")
 		(sheetname "/Peripherals/")
 		(sheetfile "Peripherals.kicad_sch")
 		(attr smd)
@@ -6113,7 +6113,7 @@
 				)
 			)
 		)
-		(property "PValue" "ISP"
+		(property "PValue" "ICSP"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -15942,7 +15942,7 @@
 				)
 			)
 		)
-		(property "Populated" "1"
+		(property "Populated" "0"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -17355,7 +17355,7 @@
 				)
 			)
 		)
-		(property "Populated" "1"
+		(property "Populated" "0"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -21436,7 +21436,7 @@
 				)
 			)
 		)
-		(path "/e7b7dae7-adcd-4da4-9a5c-30c350ad288b/d5cb7268-60b6-4138-9626-debacf3b351a")
+		(path "/e7b7dae7-adcd-4da4-9a5c-30c350ad288b/7ebb594f-2477-4047-ad99-cb482303792c")
 		(sheetname "/Peripherals/")
 		(sheetfile "Peripherals.kicad_sch")
 		(attr smd)
@@ -23478,7 +23478,7 @@
 				)
 			)
 		)
-		(property "Populated" "1"
+		(property "Populated" "0"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
